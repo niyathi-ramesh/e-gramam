@@ -1,0 +1,38 @@
+@import "breakpoints";
+@import "variables";
+
+.logo {
+  height: 100%;
+}
+
+.hamburger-button {
+  @include md {
+    display: none;
+  }
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  height: $header-height;
+
+  .header-left {
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .logo {
+    margin-right: 0.6rem;
+  }
+
+  .place-names {
+    font-size: 1rem;
+
+    div {
+      line-height: 1.4;
+    }
+  }
+}

@@ -1,3 +1,15 @@
-<eg-header></eg-header>
+<div class="height-100">
+  <eg-header (toggleNavbar)="sidenav.toggle()"></eg-header>
 
-<router-outlet></router-outlet>
+  <mat-sidenav-container class="side-nav-container">
+    <mat-sidenav #sidenav mode="over">
+      <mat-nav-list>
+        <eg-navigation (toggleNavbar)="sidenav.toggle()"></eg-navigation>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

@@ -1,0 +1,9 @@
+@import "variables";
+
+.side-nav-container {
+  height: $main-height;
+
+  .mat-sidenav {
+    width: 10rem;
+  }
+}
