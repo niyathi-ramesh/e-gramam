@@ -10,9 +10,9 @@ export const navList = [
     url: 'about',
     children: [
       {
-        name: 'history',
-        displayName: 'History',
-        url: 'history',
+        name: 'historyCulture',
+        displayName: 'History and Culture',
+        url: 'history-culture',
       },
       {
         name: 'whoIsWho',

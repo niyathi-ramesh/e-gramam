@@ -11,6 +11,7 @@ html {
 
 * {
   box-sizing: border-box;
+  line-height: 2;
 }
 
 html,
@@ -44,5 +45,10 @@ body {
 }
 
 .active-link {
-  font-weight: bold;
+  font-weight: bold !important;
+}
+
+h1,
+h2 {
+  text-align: center;
 }

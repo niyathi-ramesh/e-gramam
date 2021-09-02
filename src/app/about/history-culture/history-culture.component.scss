@@ -1,0 +1,10 @@
+@import "mixins";
+
+.history {
+  @include center-aligned-wrapper;
+  padding-bottom: 2rem;
+
+  ul {
+    list-style-type: disc;
+  }
+}

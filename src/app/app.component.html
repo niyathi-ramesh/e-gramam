@@ -1,4 +1,4 @@
-<div class="height-100">
+<div class="main-container height-100">
   <eg-header (toggleNavbar)="sidenav.toggle()"></eg-header>
 
   <mat-sidenav-container class="side-nav-container">
@@ -10,6 +10,8 @@
 
     <mat-sidenav-content>
       <router-outlet></router-outlet>
+
+      <eg-footer></eg-footer>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

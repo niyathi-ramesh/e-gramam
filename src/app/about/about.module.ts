@@ -3,23 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { AboutRoutingModule } from './about-routing.module';
 import { AboutComponent } from './about.component';
-import { HistoryComponent } from './history/history.component';
 import { WhoIsWhoComponent } from './who-is-who/who-is-who.component';
 import { MapOfVillageComponent } from './map-of-village/map-of-village.component';
 import { DemographyComponent } from './demography/demography.component';
-
+import { HistoryCultureComponent } from './history-culture/history-culture.component';
 
 @NgModule({
   declarations: [
     AboutComponent,
-    HistoryComponent,
+    HistoryCultureComponent,
     WhoIsWhoComponent,
     MapOfVillageComponent,
-    DemographyComponent
+    DemographyComponent,
   ],
-  imports: [
-    CommonModule,
-    AboutRoutingModule
-  ]
+  imports: [CommonModule, AboutRoutingModule],
 })
-export class AboutModule { }
+export class AboutModule {}

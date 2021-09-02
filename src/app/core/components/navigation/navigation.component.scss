@@ -35,7 +35,6 @@
 
         &.active-link {
           @include underline;
-          font-weight: bold;
         }
       }
     }

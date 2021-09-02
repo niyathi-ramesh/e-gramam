@@ -5,13 +5,14 @@ import { MaterialModule } from '../shared/material.module';
 import { RouterModule } from '@angular/router';
 
 import { EnsureModuleLoadedOnce } from './ensure-module-loaded-once.guard';
-import { HeaderComponent } from './header/header.component';
-import { NavigationComponent } from './navigation/navigation.component';
+import { HeaderComponent } from './components/header/header.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-  declarations: [HeaderComponent, NavigationComponent],
+  declarations: [HeaderComponent, NavigationComponent, FooterComponent],
   imports: [CommonModule, RouterModule, MaterialModule],
-  exports: [HeaderComponent, NavigationComponent],
+  exports: [HeaderComponent, NavigationComponent, FooterComponent],
 })
 export class CoreModule extends EnsureModuleLoadedOnce {
   constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
